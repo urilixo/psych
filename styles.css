@@ -1,0 +1,130 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+body{
+    font-family: 'Roboto Serif', sans-serif;
+    display: flex;
+    flex-direction: column;;
+    margin: 0px;
+    width: 100%;
+}
+.main-area{
+
+    flex-grow: 1;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#menu a{
+    font-size: 18px;
+    text-align: right;
+    padding: 10px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+.double-panel{
+    background-color: #fdffe0;
+    opacity: 0.8;
+    display: flex;
+    
+    align-content: center;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#portrait{
+    max-width: 300px;
+    border-radius: 100px;
+    padding: 50px;
+}
+
+#sobre{
+    font-size: 1.2rem;
+    padding: 2.5%;
+    margin:2.5%;
+    text-align: center;
+
+}
+#sobre h1{
+    font-family: 'Inika', serif;
+    font-weight: 700;
+}
+#cv{
+    background-color: brown;
+}
+#atendimento{
+    padding-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(187, 173, 148, 0.589);
+    
+    text-align: center;
+}
+#atendimento img{
+    box-shadow: 10px 5px 5px rgba(141, 141, 141, 0.507);
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+#textbox{
+    border-radius: 10px;
+    background-color: rgb(238, 255, 253);
+    color: rgb(46, 28, 0);
+    padding: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 10px 4px 6px rgba(141, 141, 141, 0.507);
+}
+#atendimento h1{
+    
+}
+.card-layout{
+    background-color: rgb(44, 23, 11);
+}
+#depoimentos{
+    background-color: darkgoldenrod;
+}
+#contato{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
+.footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: large;
+    color: white;
+    background-color: rgb(29, 25, 26);
+}
+
+/*
+flip card
+*/
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 250ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }

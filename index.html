@@ -1,31 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@700&family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
 </head>
 <body>
-<div class="header">
-    <div id="title"></div>
-    <div id="menu">
-        <a href="#about-me">Sobre mim</a>
-        <a href="#previous-works">Trabalhos</a>
-        <a href="#cv">Currículo</a>
-        <a href="#testimonials">Depoimentos</a>
-        <a href="#contact">Contato</a>
-    </div>
-</div>
-<div class="body">
-    <div id="about-me">
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    </div>
-    <div id="previous-works"></div>
-    <div id="cv"></div>
-    <div id="contact"></div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top" id="header" aria-label="Seventh navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Início</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='#atendimento'>Atendimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='#contato'>Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
+    <div class="header" id="header">
+        <div id="title"></div>
+        <div id="menu">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#cv">Experiência</a>
+            <a href="#atendimento">Atendimento</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+    <div class="main-area">
+        <div class='double-panel container-fluid px-0 px-md-3'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-auto align-items-center">
+                        <img class='img-fluid mx-auto text-center no-gutters mb-4 mb-lg-5 d-flex rounded-lg ' id='portrait' src="./img/portrait.jpeg" alt="Foto de Pessoa Aleatoria">
+                    </div>
+                    <div class="col-md">
+                        <div class='row align-items-center no-gutters mb-4 mb-lg-5 d-flex flex-md-row flex-column' id='sobre'>
+                            <h1>Sobre mim</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur orci et eros dignissim egestas. In hac habitasse platea dictumst. Quisque ac facilisis sapien. </p>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid px-0 px-md-3' id="atendimento">
+            <div class='container'>
+                <div class='row'>
+                    <div class='col' id='textbox'>
+                        <h1>Atendimento</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur orci et eros dignissim egestas. In hac habitasse platea dictumst. Quisque ac facilisis sapien. Maecenas vel tincidunt erat. Nulla laoreet, lorem vel accumsan suscipit, velit lectus maximus nulla, ac volutpat nisi magna ac lorem. Fusce non sagittis justo. Praesent at massa ultrices, facilisis justo ac, laoreet nisi. Pellentesque quis enim arcu. Aliquam congue viverra purus, id ornare diam ornare at. In id nisi vitae urna blandit tincidunt suscipit sed erat.</p>
+                    </div>
+                    <div class='col'>
+                        <img class='img-fluid' src="./img/buda.jpeg" alt="Foto de Pessoa Aleatoria">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Depoimentos"></div>
+
+        <div class='container card-group' id="contato">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white card-layout ">
+                    <div class="card-body text-center">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h3 class="card-title">E-mail</h3>
+                        <p class="card-text">Envie dúvidas ou sugestões</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                            </svg></h3>
+                        <p class="card-text">contact@email.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-flip h-100 rounded-lg">
+                <div class="card-front text-white card-layout">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-whatsapp fa-5x float-right"></i>
+                        <h3 class="card-title text-center">
+                            Telefone
+                        </h3>
+                        <p class="card-text text-center">Entre em contato!</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                            </svg></h2>
+                        <p class="card-text text-center">(xx)xxxxx-xxxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footer container-fluid text-center'>Copyright © 2022  </div>
 </body>
 </html>
