@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@700&family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@700&family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 <body>
@@ -53,8 +54,8 @@
         <div class='double-panel container-fluid px-0 px-md-3'>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-auto align-items-center">
-                        <img class='img-fluid mx-auto text-center no-gutters mb-4 mb-lg-5 d-flex rounded-lg ' id='portrait' src="./img/portrait.jpeg" alt="Foto de Pessoa Aleatoria">
+                    <div class="col-sm-auto align-items-center mx-auto">
+                        <img class='img-fluid mx-auto text-center no-gutters mb-4 mb-lg-5 d-flex rounded-lg' id='portrait' src="./img/portrait.jpeg" alt="Foto de Pessoa Aleatoria">
                     </div>
                     <div class="col-md">
                         <div class='row align-items-center no-gutters mb-4 mb-lg-5 d-flex flex-md-row flex-column' id='sobre'>
@@ -74,12 +75,62 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur orci et eros dignissim egestas. In hac habitasse platea dictumst. Quisque ac facilisis sapien. Maecenas vel tincidunt erat. Nulla laoreet, lorem vel accumsan suscipit, velit lectus maximus nulla, ac volutpat nisi magna ac lorem. Fusce non sagittis justo. Praesent at massa ultrices, facilisis justo ac, laoreet nisi. Pellentesque quis enim arcu. Aliquam congue viverra purus, id ornare diam ornare at. In id nisi vitae urna blandit tincidunt suscipit sed erat.</p>
                     </div>
                     <div class='col'>
-                        <img class='img-fluid' src="./img/buda.jpeg" alt="Foto de Pessoa Aleatoria">
+                        <img class='img-fluid' src="./img/buda.jpeg">
                     </div>
                 </div>
             </div>
         </div>
+  <!-- ======= Duvidas Frequentes ======= -->
+<section id="faq" class="faq section-bg">
+    <div class="container">
 
+        <div class="section-title">
+            <h2>Perguntas Frequentes</h2>
+        </div>
+
+        <ul class="lista-faq">
+            <li>
+                <div data-bs-toggle="collapse" class="collapsed pergunta" href="#faq1"> Donec rutrum nunc sed ligula congue, ut ullamcorper leo pulvinar?
+                    <i class="bi bi-chevron-down icon-show"></i>
+                    <i class="bi bi-chevron-up icon-close"></i>
+                </div>
+
+                <div id="faq1" class="collapse">
+                    <p>
+                        Morbi lacinia ex at velit sodales, at pharetra turpis pellentesque
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed pergunta">Etiam eleifend suscipit enim, id bibendum libero auctor sit amet?
+                    <i class="bi bi-chevron-down icon-show"></i>
+                    <i class="bi bi-chevron-up icon-close"></i>
+                </div>
+
+                <div id="faq2" class="collapse">
+                    <p>
+                        Vestibulum eu ipsum id lorem commodo laoreet. 
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed pergunta">Maecenas tincidunt, felis a tincidunt eleifend, est quam varius lorem? 
+                    <i class="bi bi-chevron-down icon-show"></i>
+                    <i class="bi bi-chevron-up icon-close"></i>
+                </div>
+
+                <div id="faq3" class="collapse">
+                    <p>
+                        Etiam eleifend suscipit enim, id bibendum libero auctor sit amet. Nam mollis augue nibh, et egestas purus euismod eget. Duis a pharetra felis. Suspendisse iaculis sodales nibh eget malesuada. Nunc condimentum magna at dolor ornare, id sagittis eros consequat. Fusce et consectetur est, id suscipit sem. Nulla facilisi. Vivamus ut ex orci.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
         <div id="Depoimentos"></div>
 
         <div class='container card-group' id="contato">
@@ -122,6 +173,11 @@
                 </div>
             </div>
         </div>
+            
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.95346873776452!2d-43.11918654761655!3d-22.755897497287823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999c20e353bef7%3A0xefbfe36f1e669ab2!2sPraia%20da%20Batata!5e0!3m2!1sen!2sbr!4v1645337950154!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+
         <div class='footer container-fluid text-center'>Copyright © 2022  </div>
 </body>
 </html>
